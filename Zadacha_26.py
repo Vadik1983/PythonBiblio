@@ -3,10 +3,12 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #A = 2; B = 3 -> 8 
 
-A = int(input("Введите число Ф: "))
-B = int(input("Введите число Ф: "))
+A = int(input("Введите число A: "))
+B = int(input("Введите число B: "))
 
-def expt(a, b):
-    if b == 0:
+def expt(A, B):
+    if B == 0:
         return 1
-    print(return b*expt(b, a-1))
+    print(B*expt(B, A-1))
+
+expt(A, B)
