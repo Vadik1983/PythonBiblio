@@ -18,3 +18,11 @@ r = int(input("Введите разность: "))
 n = int(input("Введите количество элементов: "))
 
 progressia(p, r, n)
+
+
+# Эталонное решение
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# for i in range(n):
+#     print(a1 + i * d)
