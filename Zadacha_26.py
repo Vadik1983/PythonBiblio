@@ -3,12 +3,13 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #A = 2; B = 3 -> 8 
 
+def expt(A, B):
+
+    if B == 1:
+        return A
+    if B != 1:
+        return(A * expt(A, B - 1))
+
 A = int(input("Введите число A: "))
 B = int(input("Введите число B: "))
-
-def expt(A, B):
-    if B == 0:
-        return 1
-    print(B*expt(B, A-1))
-
-expt(A, B)
+print("Результат = ", expt(A, B))
