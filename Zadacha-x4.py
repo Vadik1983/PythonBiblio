@@ -4,10 +4,43 @@
 
 # Вывод Делится
 
-n = 234523642345789812354678654323454919865
+
+n = 1400000000000000000000000000000000000000000000000000000001
+#n = 23452364234578981235467865432345491986665 # Исправил вторую цифру на 9 (было 3) получил тру.
+#n = 3353377477969973193525522046207845695      # Исправил вторую цифру на 1 (было 3) получил тру.
+                                               # Проверил оба числа вручную на бумаге столбиком до и после исправлений.
+
+print(type(n))
+# Вывод: <class 'int'>
+
+
+def delim_2(n):
+    while n > 99:
+        res = (n // 10) - ((n % 10) * 2)
+        n //= 10
+        print(res)
+    if res % 7 == 0 : print (True)
+    else: print(False)
+
+delim_2(n)
+
 
 
 def delim(n):
+    x = str(n)
+    i = 0
+
+    while i < (len(x) - 1):
+        res = ((int(x[i]) / 7) * 10) + int(x[i + 1])
+        i += 1
+    if res % 10 == 0: print(True)
+    else: print(False)
+        
+delim(n)
+
+
+
+def delim_1(n):
     num_1 = 0
     if n < 100:
         temp = n % 10
@@ -15,17 +48,6 @@ def delim(n):
         if (num_1 % 7) == 0: print(True)
         else: print(False)
     else:
-        return (delim(n // 10))
-    
+        return (delim_1(n // 10))
 
-delim(n)
-
-# def delim_1(n):
-#     while n > 99:
-#         res = (n // 10) - ((n % 10) * 2)
-#         n //= 10
-#     print(res)
-#     if res % 7 == 0 : print (True)
-#     else: print(False)
-
-# delim_1(n)
+delim_1(n)
