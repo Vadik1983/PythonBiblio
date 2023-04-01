@@ -23,3 +23,12 @@ N = int(input('Введите число элементов: '))
 min = int(input('Введите минимальное значение диапазона: '))
 max = int(input('Введите максимальное значение диапазона: '))
 renge_num(N)
+
+
+# Эталонное решение
+# list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+# min_number = int(input())
+# max_number = int(input())
+# for i in range(len(list_1)):
+#     if min_number <= list_1[i] <= max_number:
+#         print(i)

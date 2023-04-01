@@ -24,19 +24,31 @@ def numbers(a, b):
     y = set(arr_b)
     result = x.intersection(y)
 
-    # j = 0
-    # k = 0
-    # while j < len(arr_a):
-    #     while k < len(arr_b):
-    #         if arr_b[k] == arr_a[j]:
-    #             result.append(arr_b[k])
-    #             k += 1
-    #         else:
-    #             k += 1
-    #     j = j + 1
 
     print(result)
 
 a = int(input('Введите каличество элементов первого набора чисел: '))
 b = int(input('Введите каличество элементов второго набора чисел: '))
 numbers(a, b)
+
+
+# Эталонное решение
+# mol = [int(x) for x in input().split()]
+# n = mol[0]
+# m = mol[1]
+# set_1 = set()
+# set_2 = set()
+# list_1 = list()
+# a = [int(x) for x in input().split()]
+# k = set(a)
+# for i in k:
+#     set_1.add(i)
+# b = [int(x) for x in input().split()]
+# k1 = set(b)
+# for i in k1:
+#     set_2.add(i)
+# lok = set_1 & set_2
+# kool = list(lok)
+# kool.sort()
+# for i in kool:
+#     print(i, end=' ')
