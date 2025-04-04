@@ -10,7 +10,7 @@ number2 = number // 1000
 sum1 = 0
 sum2 = 0
 
-while number > 1000:
+while number >= 1000:
     digit = (number % 10)
     sum1 = sum1 + digit
     number = number // 10

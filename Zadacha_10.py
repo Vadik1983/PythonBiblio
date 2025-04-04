@@ -14,11 +14,17 @@ def avers_revers(n):
     print(money)
 
     count = 0
+    count1 = 0
+
     j = 0
     while j < len(money):
         if money[j] == 1:
             count += 1
+        else:
+            count1 += 1
         j += 1
-    print(count)
-
+    if count1 <= count:
+        print(count1)
+    else:
+        print(count)
 avers_revers(n)
